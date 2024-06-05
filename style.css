@@ -1,0 +1,130 @@
+:root{
+    --padding-default: 10px;
+    --primary-blue-color: #1e3a8a;
+    --primary-purple-color: #312e81;
+    --secondary-purple-color: #3730a3;
+}
+
+body {
+    margin: 0;
+    padding: var(--padding-default);
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: 'YTLC';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%; 
+    background-image: url(/layer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: var(--primary-blue-color);
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 0;
+    margin-top: 2%;
+    
+}
+
+.description {
+    margin-bottom: 10px;
+    color:var(--primary-purple-color);
+    font-weight: bold;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.description > p {
+    font-size: 20px;
+    color: var(--secondary-purple-color);
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+.beach-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.beach-list__box {
+    background-color: white;
+    margin-right: 10px;
+    width: 15em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    transition: width 0.5s, height 0.5s;
+    cursor: pointer;
+}
+
+.beach-list__box:hover {
+    background-color: #d6d3d1;
+}
+
+.beach-list__box:hover {
+    width: 14em;
+}
+
+.beach-list__box > h3 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.beach-list__box > p{
+    text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+.subtitle {
+    text-align: center;
+    color:var(--primary-blue-color);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+.map__container {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+}
+
+#map { height: 400px; width: 400px; position: absolute;   }
